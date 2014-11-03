@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+	<style>
+		 html{font-size:12px;}
+		.label{float:left; width:70px; margin-left:10px;}
+		.input{width:150px;}
+		.url{width:300px;}
+		.left{margin-left:80px;}
+		fieldset{width:400px; margin: 0 auto;}
+		legend{font-weight:bold; font-size:14px;}
+	</style>
+	<script src="jquery.js"></script>
+	<script src="popup.js"></script>
+</head>
+<body>
+	<fieldset>
+	<legend>用户登录</legend>
+	<p>
+	<label for="username" class="label">用户名:</label>
+	<input id="username" name="username" type="text" class="input" />
+	<p/>
+	<p>
+	<label for="password" class="label">密 码:</label>
+	<input id="password" name="password" type="password" class="input" />
+	<p/>
+	<p>
+	<label for="start_time" class="label">开始时间(HH::MM):</label>
+	<input id="start_time" name="start_time" type="text" class="input" />
+	<p/>
+	<p>
+	<label for="url_addr" class="label">URL:</label>
+	<input id="url_addr" name="url_addr" type="text" class="url" />
+	<p/>
+	<p>
+	<label for="size" class="label">Size(start with 0):</label>
+	<input id="your_size" name="your_size" type="text" class="input" />
+	<p/>
+	<p>
+	<label for="color" class="label">Color(start with 0):</label>
+	<input id="your_color" name="your_color" type="text" class="input" />
+	<p/>
+	<p>
+	<label for="buy_type" class="label">类 型:</label>
+	<select id="buy_type" name="buy_type" >
+	  <option value ="0">淘宝/天猫</option>
+	  <option value="2">聚划算</option>
+	</select>
+	<p/>
+	<p>
+	<input type="button" id="start" name="submit" value="  Go  " class="left" />
+	</p>    
+	</fieldset>
+</body>
+</html>

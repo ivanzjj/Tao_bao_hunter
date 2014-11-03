@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name":    "Tao Bao Hunter",
+    "version": "1.0",
+	
+	"background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["http://*.taobao.com/*" , "https://*.taobao.com/*" , "http://*.tmall.com/*" , "https://*.tmall.com/*"],
+        "js":      ["jquery.js"] ,
+		"run_at" : "document_start" 
+    }],
+    "browser_action": {
+        "default_title": "Tao Bao Hunter" , 
+		"default_icon": "icon.png",
+		"default_popup": "popup.html" 
+    },
+    "permissions": [
+		"tabs" , 
+		"cookies" , 
+		"http://*/*" , 
+		"https://*/*" 
+	]
+}
